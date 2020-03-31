@@ -1,3 +1,43 @@
+.ReactModalPortal>div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: $light-blue;
+  color: white;
+  max-width: 30rem;
+  outline: none;
+  padding: $l-size;
+  text-align: center;
+}
+
+.modal__title {
+  margin: 0 0 $m-size 0;
+}
+
+.modal__body {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 $l-size 0;
+  word-break: break-all;
+}
+
+
 // .ReactModalPortal > div {
 //   opacity: 0;
 // }
@@ -9,7 +49,7 @@
 //   justify-content: center; //align horizontally
 // }
 
-// .ReactModalPortal .ReactModal__Overlay--after-open {
+//  .ReactModalPortal .ReactModal__Overlay--after-open {
 //   opacity: 1;
 // }
 
@@ -19,26 +59,26 @@
 // .ReactModalPortal .ReactModal__Content--before-close{
 //   opacity: 0;
 // }
-  // .modal {
-  // background: $dark-blue;
-  // color: white;
-  // min-width: 10rem;
-  // width: 40rem;
-  // max-width: 50rem;
-  // outline: none;
-  // padding: $s-size;
-  // text-align: center;
-  // word-break: break-all;
-  // }
+//   .modal {
+//   background: $dark-blue;
+//   color: white;
+//   min-width: 10rem;
+//   width: 40rem;
+//   max-width: 50rem;
+//   outline: none;
+//   padding: $s-size;
+//   text-align: center;
+//   word-break: break-all;
+//   }
   
-  // .modal__title {
-  //   margin: 0 0 $m-size 0;
-  // }
+//   .modal__title {
+//     margin: 0 0 $m-size 0;
+//   }
   
-  // .modal__body {
-  //   font-size: 2rem;
-  //   font-weight: 300;
-  //   margin: 0 0 $l-size 0;
-  //   word-break: break-all;
-  // }
+//    .modal__body{
+//     font-size: 2rem;
+//     font-weight: 300;
+//     margin: 0 0 $l-size 0;
+//     word-break: break-all;
+//   }
   
